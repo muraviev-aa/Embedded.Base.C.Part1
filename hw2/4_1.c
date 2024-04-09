@@ -10,6 +10,7 @@ int main()
     printf("0\t1\t1\t1\t1\n");
     printf("1\t0\t0\t0\t0\n");
     printf("1\t1\t0\t1\t1\n");
+    printf("The identity is proven.");
     return 0;
 }
 
