@@ -1,8 +1,8 @@
+<a name="readme-top"></a>
 ![C](https://img.shields.io/badge/c-%2300599C.svg?style=for-the-badge&logo=c&logoColor=white)
 ![GitHub](https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white)
 ![CLion](https://img.shields.io/badge/CLion-black?style=for-the-badge&logo=clion&logoColor=white)
 
-<a name="readme-top"></a>
 # Программирование на Си. Базовый уровень.
 <p align="center">
 <img src="images/C.png" alt="drawing" width="300"/>
@@ -47,5 +47,6 @@
 * 1.c Вывод введенных чисел в порядке возрастания;
 * 2.c Вывод наибольшего числа из трех введенных целых чисел;
 * 3.c Вывод максимальной цифры из введенного целого положительного трехзначного числа;
+* 4.c Вывод суммы максимального и минимального числа из пяти введенных целых чисел;
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
