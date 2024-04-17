@@ -8,6 +8,6 @@ int main()
     int a, b;
     printf("Введите два целых числа через пробел\n");
     scanf("%d%d", &a, &b);
-    printf("%d", a-b);
+    printf("Разность введенных чисел: %d", a-b);
     return 0;
 }
