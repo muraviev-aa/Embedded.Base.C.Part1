@@ -10,9 +10,6 @@ int main(void)
             flag++;
         a /= 10;
     }
-    if (flag > 0)
-        printf("%s", "YES");
-    else
-        printf("%s", "NO");
+    flag > 0 ? printf("%s", "YES") : printf("%s", "NO");
     return 0;
 }
