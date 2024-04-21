@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-int main()
+int main(void)
 {
     int a, even = 0, odd = 0;
     scanf("%d", &a);
