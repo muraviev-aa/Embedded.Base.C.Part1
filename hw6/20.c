@@ -10,8 +10,7 @@ int main(void)
             a++;
         else if (ch == ')' && --a < 0)
             break;
-    }
-    while (ch != '.');
+    } while (ch != '.');
 
     if (a == 0)
         printf("YES");
