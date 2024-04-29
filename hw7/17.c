@@ -5,8 +5,8 @@ int funcAkkerman(int m, int n);
 int main(void)
 {
     int m, n;
-    scanf("%u%u", &m, &n);
-    printf("%u", funcAkkerman(m, n));
+    scanf("%d%d", &m, &n);
+    printf("%d", funcAkkerman(m, n));
     return 0;
 }
 
