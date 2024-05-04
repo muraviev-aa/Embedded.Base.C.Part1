@@ -3,13 +3,13 @@
 
 int creatingArray(int sizeArr, int arr[]);
 
-void findMinNumAndPosFromArray(int sizeArr, const int arr[]);
+void findMinNumFromArray(int sizeArr, const int arr[]);
 
 int main(void)
 {
     int arr[SIZE_ARR];
     creatingArray(SIZE_ARR, arr);
-    findMinNumAndPosFromArray(SIZE_ARR, arr);
+    findMinNumFromArray(SIZE_ARR, arr);
     return 0;
 }
 
@@ -21,7 +21,7 @@ int creatingArray(int sizeArr, int arr[])
     return i;
 }
 
-void findMinNumAndPosFromArray(int sizeArr, const int arr[])
+void findMinNumFromArray(int sizeArr, const int arr[])
 {
     int min = arr[0];
     for (int i = 1; i < sizeArr; i++)
