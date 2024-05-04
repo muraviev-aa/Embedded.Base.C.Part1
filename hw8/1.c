@@ -1,15 +1,15 @@
 #include <stdio.h>
-#define SIZE 5
+#define SIZE_ARR 5
 
-int creatingAnArray(int n, int arr[]);
+int creatingAnArray(int numSizeArr, int arr[]);
 
 double arithmeticMeanOfAllElements(int n, const int arr[]);
 
 int main(void)
 {
-    int arr[SIZE];
-    creatingAnArray(SIZE, arr);
-    printf("%.3f", arithmeticMeanOfAllElements(SIZE, arr));
+    int arr[SIZE_ARR];
+    creatingAnArray(SIZE_ARR, arr);
+    printf("%.3f", arithmeticMeanOfAllElements(SIZE_ARR, arr));
     return 0;
 }
 
