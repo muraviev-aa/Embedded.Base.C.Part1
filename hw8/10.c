@@ -6,13 +6,13 @@ int creatingAnArray(int sizeArr, int arr[]);
 
 void printArray(int sizeArr, int arr[]);
 
-void shiftRightByFourElements(int sizeArr, int offsetArr, int arr[]);
+void shiftRightElements(int sizeArr, int offsetArr, int arr[]);
 
 int main(void)
 {
     int arr[SIZE_ARR];
     creatingAnArray(SIZE_ARR, arr);
-    shiftRightByFourElements(SIZE_ARR, OFFSET_ARR, arr);
+    shiftRightElements(SIZE_ARR, OFFSET_ARR, arr);
     printArray(SIZE_ARR, arr);
     return 0;
 }
@@ -31,7 +31,7 @@ void printArray(int sizeArr, int arr[])
         printf("%d ", arr[i]);
 }
 
-void shiftRightByFourElements(int sizeArr, int offsetArr, int arr[])
+void shiftRightElements(int sizeArr, int offsetArr, int arr[])
 {
     while (offsetArr)
     {
