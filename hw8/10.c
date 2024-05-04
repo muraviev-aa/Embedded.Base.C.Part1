@@ -4,9 +4,9 @@
 
 int creatingAnArray(int sizeArr, int arr[]);
 
-void printArray(int numSizeArr, int arr[]);
+void printArray(int sizeArr, int arr[]);
 
-void shiftRightByFourElements(int numSizeArr, int numOffset, int arr[]);
+void shiftRightByFourElements(int sizeArr, int offsetArr, int arr[]);
 
 int main(void)
 {
@@ -17,29 +17,29 @@ int main(void)
     return 0;
 }
 
-int creatingAnArray(int numSizeArr, int arr[])
+int creatingAnArray(int sizeArr, int arr[])
 {
     int i;
-    for (i = 0; i < numSizeArr; i++)
+    for (i = 0; i < sizeArr; i++)
         scanf("%d", &arr[i]);
     return i;
 }
 
-void printArray(int numSizeArr, int arr[])
+void printArray(int sizeArr, int arr[])
 {
-    for (int i = 0; i < numSizeArr; i++)
+    for (int i = 0; i < sizeArr; i++)
         printf("%d ", arr[i]);
 }
 
-void shiftRightByFourElements(int numSizeArr, int numOffset, int arr[])
+void shiftRightByFourElements(int sizeArr, int offsetArr, int arr[])
 {
-    while (numOffset)
+    while (offsetArr)
     {
-        int tmp = arr[numSizeArr - 1];
-        for (int i = numSizeArr - 1; i > 0; i--)
+        int tmp = arr[sizeArr - 1];
+        for (int i = sizeArr - 1; i > 0; i--)
             arr[i] = arr[i - 1];
         arr[0] = tmp;
-        numOffset--;
+        offsetArr--;
     }
 }
 
