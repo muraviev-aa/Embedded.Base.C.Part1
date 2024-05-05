@@ -3,13 +3,13 @@
 
 int creatingAnArray(int sizeArr, int arr[]);
 
-void searchSecondZero(int sizeArr, const int arr[]);
+void searchCopyPrintSecondZero(int sizeArr, const int arr[]);
 
 int main(void)
 {
     int arr[SIZE_ARR];
     creatingAnArray(SIZE_ARR, arr);
-    searchSecondZero(SIZE_ARR, arr);
+    searchCopyPrintSecondZero(SIZE_ARR, arr);
     return 0;
 }
 
@@ -21,11 +21,17 @@ int creatingAnArray(int sizeArr, int arr[])
     return i;
 }
 
-void searchSecondZero(int sizeArr, const int arr[])
+void searchCopyPrintSecondZero(int sizeArr, const int arr[])
 {
-    for (int i = 0; i < SIZE_ARR; i++)
+    int countNum = 0, arrNum[10] = {0};
+    for (int i = 0; i < sizeArr; i++)
     {
         if (arr[i] / 10 % 10 == 0)
-            printf("%d ", arr[i]);
+        {
+            countNum++;
+            arrNum[countNum] = arr[i];
+        }
     }
+    for (int i = 1; i <= countNum; i++)
+        printf("%d ", arrNum[i]);
 }
