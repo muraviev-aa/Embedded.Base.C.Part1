@@ -28,10 +28,10 @@ void searchCopyPrintSecondZero(int sizeArr, const int arr[], int arrNum[])
     {
         if (arr[i] / 10 % 10 == 0)
         {
-            j++;
             arrNum[j] = arr[i];
+            j++;
         }
     }
-    for (int i = 1; i <= j; i++)
+    for (int i = 0; i < j; i++)
         printf("%d ", arrNum[i]);
 }
