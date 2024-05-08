@@ -1,19 +1,19 @@
 #include <stdio.h>
 #define SIZE_ARR 12
 
-int creat_array(int sizeArr, int arr[]);
+int create_array(int sizeArr, int arr[]);
 
 void print_arithmetic_mean(int sizeArr, int arr[]);
 
 int main(void)
 {
     int arr[SIZE_ARR];
-    creat_array(SIZE_ARR, arr);
+    create_array(SIZE_ARR, arr);
     print_arithmetic_mean(SIZE_ARR, arr);
     return 0;
 }
 
-int creat_array(int sizeArr, int arr[])
+int create_array(int sizeArr, int arr[])
 {
     int i;
     for (i = 0; i < sizeArr; i++)
