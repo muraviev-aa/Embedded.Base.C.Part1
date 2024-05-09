@@ -33,7 +33,7 @@
 - Аргументы командной строки. Препроцессор.
 - Отладка программ. Динамические структуры данных.
 
-#### <a id="title1">Часть 1</a>
+### <a id="title1">Часть 1</a>
 
 <strong> &#128194; hw1. Введение в язык Си</strong> 
 
@@ -41,7 +41,7 @@
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-#### <a id="title2">Часть 2</a>
+### <a id="title2">Часть 2</a>
 
 <strong> &#128194; hw2. Системы счисления</strong> 
 
@@ -50,7 +50,7 @@
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-#### <a id="title3">Часть 3</a>
+### <a id="title3">Часть 3</a>
 
 <strong> &#128194; hw3. Типы данных. Операторы и выражения</strong> 
 
@@ -63,7 +63,7 @@
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-#### <a id="title4">Часть 4</a>
+### <a id="title4">Часть 4</a>
 
 <strong> &#128194; hw4. Ветвления и побитовые операции Си</strong> 
 
@@ -81,7 +81,7 @@
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-#### <a id="title5">Часть 5</a>
+### <a id="title5">Часть 5</a>
 
 <strong> &#128194; hw5. Циклы</strong> 
 
@@ -109,7 +109,7 @@
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-#### <a id="title6">Часть 6</a>
+### <a id="title6">Часть 6</a>
 
 <strong> &#128194; hw6. Буферный ввод/вывод. Функции</strong> 
 
@@ -141,7 +141,7 @@
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-#### <a id="title7">Часть 7</a>
+### <a id="title7">Часть 7</a>
 
 <strong> &#128194; hw7. Рекурсивные функции</strong> 
 
@@ -174,8 +174,8 @@
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-#### <a id="title8">Часть 8</a>
-#### Массивы
+### <a id="title8">Часть 8</a>
+
 <strong> &#128194; hw8. Массивы</strong> 
 
 * <strong> 1.c </strong> Найти среднее арифметическое всех элементов массива из 5 целых не нулевых чисел;
