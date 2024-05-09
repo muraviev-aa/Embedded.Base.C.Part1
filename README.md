@@ -144,7 +144,7 @@
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-<a name="hw8"></a>
+<a name="Массивы"></a>
 
 <strong> &#128194; hw8. Массивы. </strong> 
 
