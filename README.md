@@ -171,7 +171,7 @@
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-### <a id="title8"></a>
+### <a id="title8"> </a>
 
 <strong> &#128194; hw8. Массивы </strong> 
 
