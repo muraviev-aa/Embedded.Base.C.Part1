@@ -177,7 +177,7 @@
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 -----
-## <a id="title8">Часть 8</a>
+## title8
 <strong> &#128194; hw8. Массивы</strong> 
 
 * <strong> 1.c </strong> Найти среднее арифметическое всех элементов массива из 5 целых не нулевых чисел;
