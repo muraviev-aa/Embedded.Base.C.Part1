@@ -118,7 +118,7 @@
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-### <a id="title7">Рекурсивные функции</a>
+### <a id="title8">Рекурсивные функции</a>
 
 <strong> &#128194; hw7 </strong> 
 
