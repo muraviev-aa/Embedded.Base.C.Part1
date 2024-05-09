@@ -141,7 +141,7 @@
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-### <a id="title7">Часть 7</a>
+### <a id="title7">Часть-7</a>
 
 <strong> &#128194; hw7. Рекурсивные функции</strong> 
 
