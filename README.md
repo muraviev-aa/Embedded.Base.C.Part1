@@ -6,7 +6,7 @@
 
 # Программирование на Си. Базовый уровень.
 <p align="center">
-<img src="images/C.png" alt="drawing" width="300"/>
+<img src="images/C.png" alt="drawing" width="260"/>
 </p>
 
 ### В этом проекте рассмотрены: 
@@ -39,12 +39,16 @@
 
 * <strong> 1.c, 2.c, 3.c </strong> Работа с функцией форматированного вывода printf().
 
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
 ### <a id="title2">Часть 2</a>
 
 <strong> &#128194; hw2. Системы счисления</strong> 
 
 * <strong> 4_1.c </strong> Доказательство тождества А->В =!A||B;
 * <strong> 4_2.c </strong> Доказательство тождества А<->В = (A&&B)||(!A&&!B).
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ### <a id="title3">Часть 3</a>
 
