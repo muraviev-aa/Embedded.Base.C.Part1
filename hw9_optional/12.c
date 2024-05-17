@@ -1,18 +1,18 @@
 #include <stdio.h>
 #define SIZE_ARR 10
 
-int creat_array(int size_arr, int a[]);
+int create_array(int size_arr, int a[]);
 void change_max_min(int size, int a[]);
 
 int main(void)
 {
     int arr[SIZE_ARR] = {0};
-    creat_array(SIZE_ARR, arr);
+    create_array(SIZE_ARR, arr);
     change_max_min(SIZE_ARR, arr);
     return 0;
 }
 
-int creat_array(int size_arr, int a[])
+int create_array(int size_arr, int a[])
 {
     int i;
     for (i = 0; i < size_arr; i++)
