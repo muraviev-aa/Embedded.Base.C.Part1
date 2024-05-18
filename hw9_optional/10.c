@@ -41,6 +41,7 @@ int count_symbols(int len, const char arr[], char symbols[], int count[])
     int outCount = 0;
     int i;
     for (i = 0; i < len - 1; i++)
+    {
         if (arr[i] == arr[i + 1])
             countSymbol++;
         else
@@ -49,6 +50,7 @@ int count_symbols(int len, const char arr[], char symbols[], int count[])
             count[outCount++] = countSymbol;
             countSymbol = 1;
         }
+    }
     symbols[outCount] = arr[i];
     count[outCount++] = countSymbol;
     return outCount;
