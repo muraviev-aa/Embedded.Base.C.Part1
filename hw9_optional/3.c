@@ -25,6 +25,6 @@ void print_result(int size_arr, int arr[])
 
 void count_digits(const char number[], int result[])
 {
-    for (int i = 0; number[i] != 0; i++)
+    for (int i = 0; number[i] != '\0'; i++)
         result[number[i] - '0']++;
 }
