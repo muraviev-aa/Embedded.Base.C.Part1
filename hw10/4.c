@@ -6,7 +6,7 @@ char INPUT[] = "input.txt";
 char OUTPUT[] = "output.txt";
 
 
-void search(char *input, char *output);
+int search(char *input, char *output);
 int compare(const void *a, const void *b);
 
 int main(void)
@@ -15,11 +15,18 @@ int main(void)
     return 0;
 }
 
-void search(char *input, char *output)
+int search(char *input, char *output)
 {
     char first[SIZE] = {0}, second[SIZE] = {0}, uniq_chars[SIZE] = {0};
     FILE *fptr_in;
     fptr_in = fopen(input, "r");
+    if (fptr_in == NULL)
+    {
+        puts("File \"input.txt\" not found!");
+        exit(1);
+    }
+    else
+        puts("File \"input.txt\" read.");
     fscanf(fptr_in, "%s", first);
     fscanf(fptr_in, "%s", second);
     int amount1 = 0, flag;
@@ -36,9 +43,7 @@ void search(char *input, char *output)
             }
         }
         if (!flag)
-        {
             uniq_chars[amount1++] = cur;
-        }
     }
 
     int amount2 = 0, count;
@@ -50,29 +55,29 @@ void search(char *input, char *output)
         for (int j = 0; j < strlen(second); j++)
         {
             if (cur == second[j])
-            {
                 count++;
-            }
             if (count > 1)
-            {
                 break;
-            }
         }
         if (count == 1)
-        {
             result[amount2++] = cur;
-        }
     }
 
     qsort(result, sizeof(char), amount2, compare);
-    FILE *fptr_out = fopen(output, "w");
-    for (int i = 0; i < amount2; i++)
+    FILE *fptr_out;
+    fptr_out = fopen(output, "w");
+    if (fptr_out == NULL)
     {
-        fprintf(fptr_out, "%c ", result[i]);
+        puts("File \"output.txt\" not found!");
+        exit(1);
     }
-
+    else
+        puts("File \"output.txt\" created.");
+    for (int i = 0; i < amount2; i++)
+        fprintf(fptr_out, "%c ", result[i]);
     fclose(fptr_in);
     fclose(fptr_out);
+    return 0;
 }
 
 int compare(const void *a, const void *b)
