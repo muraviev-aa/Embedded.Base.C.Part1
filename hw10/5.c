@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
-#define SIZE 1000
+#define SIZE 1001
 char INPUT[] = "input.txt";
 char OUTPUT[] = "output.txt";
 
