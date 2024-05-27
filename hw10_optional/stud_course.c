@@ -30,10 +30,47 @@ int add_course(struct student course[])
     return count;
 }
 
+void print_course(struct student course[], int number)
+{
+    for (int i = 0; i < number; i++)
+    {
+        printf("%s\t%s\t%d\n",
+               course[i].surname,
+               course[i].name,
+               course[i].age);
+    }
+}
+
+int eldest(struct student course[], int number)
+{
+    int max = course[number].age;
+    for (int i = 0; i < number; i++)
+    {
+        if(max < course[i].age)
+            max = course[i].age;
+    }
+    return max;
+}
+
+int num_people_given_name(struct student *course, int number, char *name)
+{
+    int count = 0;
+    for (int i = 0; i < number; i++)
+    {
+        if(!strcmp(course[i].name, name))
+            count++;
+    }
+    return count;
+}
+
 int main(void)
 {
     struct student course[STUDENT_NUMBER]; // ghbyn
     int number = add_course(course);
     printf("%d\n", number);
+    print_course(course, number);
+    printf("Eldest student is %d\n", eldest(course, number));
+    char *name = "Ivan";
+    printf("Name %s number = %d\n", name, num_people_given_name(course, number, name));
     return 0;
 }

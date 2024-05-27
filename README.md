@@ -299,6 +299,6 @@ output.txt в лексикографическом порядке. Исходн�
 
 <strong> &#128194; hw10_optional. Структуры</strong> 
 
-* <strong> stud_course.c </strong>
+* <strong> stud_course.c </strong> Работа со структурами.
 
 <p align="right">(<a href="#readme-top">вверх</a>)</p>
