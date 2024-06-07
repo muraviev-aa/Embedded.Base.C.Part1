@@ -8,6 +8,7 @@ typedef struct list
     struct list *next;
 } stack;
 
+// Добавить с стек
 void push(struct list **p, datatype data)
 {
     stack *ptmp;
@@ -22,11 +23,13 @@ void push(struct list **p, datatype data)
     *p = ptmp;
 }
 
+// Проверка пуст стек или нет
 _Bool empty_stack(stack *p)
 {
     return p == NULL;
 }
 
+// Извлечь из стека
 datatype pop(stack **p)
 {
     stack *ptmp = *p;
