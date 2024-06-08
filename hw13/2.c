@@ -19,11 +19,6 @@ void init_stack(stack_arr *st)
     st->item = malloc(st->size * sizeof(datatype));
 }
 
-void delete_stack(stack_arr *st)
-{
-    free(st->item);
-}
-
 // Добавить в стек
 void push_arr(stack_arr *st, datatype value)
 {
@@ -33,12 +28,6 @@ void push_arr(stack_arr *st, datatype value)
         st->item = realloc(st->item, st->size * sizeof(datatype));
     }
     st->item[st->sp++] = value;
-}
-
-// Проверка есть ли в списке хотя бы один элемент
-int empty_stack(stack_arr *st)
-{
-    return (st->sp < 1);
 }
 
 // Извлечь из стека
