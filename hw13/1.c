@@ -46,7 +46,11 @@ int main(void)
 {
     stack *p = NULL; // Важно для корректной работы присвоить NULL
     for (int i = 1; i <= 5; i++)
+    {
         push(&p, i);
+        printf("%d ", p->value);
+    }
+    printf("\n");
     for (int i = 1; i <= 5; i++)
-        printf("%d", pop(&p));
+        printf("%d ", pop(&p));
 }
