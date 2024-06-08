@@ -2,6 +2,8 @@
 #include <stdlib.h>
 
 typedef int datatype;
+
+// Стек через однонаправленный список
 typedef struct list
 {
     datatype value;
@@ -34,7 +36,7 @@ datatype pop(stack **p)
 {
     stack *ptmp = *p;
     datatype c;
-    if(empty_stack(*p))
+    if (empty_stack(*p))
         exit(1);
     c = ptmp->value;
     *p = ptmp->next;
