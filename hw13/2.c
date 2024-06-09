@@ -41,19 +41,26 @@ void pop_arr(stack_arr *st, datatype *value)
     *value = st->item[--(st->sp)];
 }
 
+// Удаление динамического массива из памяти
+void delete_stack(stack_arr *st)
+{
+    free(st->item);
+}
+
 int main(void)
 {
     stack_arr st;
-    init_stack(&st);
+    stack_arr *pst = &st;
+    init_stack(pst);
     for (int i = 1; i <= 5; i++)
-        push_arr(&st, i);
+        push_arr(pst, i);
     datatype value;
     for (int i = 1; i <= 5; i++)
     {
-        pop_arr(&st, &value);
+        pop_arr(pst, &value);
         printf("%d ", value);
     }
     // Удаляем динамический массив из кучи
-    free(st.item);
+    delete_stack(pst);
     return 0;
 }
