@@ -3,7 +3,7 @@
 
 typedef int datatype;
 
-// Стек через однонаправленный список
+// Шаблон стека через однонаправленный список
 typedef struct list
 {
     datatype value;

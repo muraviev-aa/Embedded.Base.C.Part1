@@ -3,7 +3,7 @@
 
 typedef int datatype;
 
-// Стек через динамический массив
+// Шаблон стека через динамический массив
 typedef struct
 {
     int size;         // размер выделенной памяти
@@ -19,7 +19,7 @@ void init_stack(stack_arr *st)
     st->item = malloc(st->size * sizeof(datatype));
 }
 
-// Добавить в стек
+// Добавить значение в динамический массив
 void push_arr(stack_arr *st, datatype value)
 {
     if (st->sp >= st->size - 1)
@@ -30,7 +30,7 @@ void push_arr(stack_arr *st, datatype value)
     st->item[st->sp++] = value;
 }
 
-// Извлечь из стека
+// Извлечь значение из динамического массива
 void pop_arr(stack_arr *st, datatype *value)
 {
     if (st->sp < 1)
