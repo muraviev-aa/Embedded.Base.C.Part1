@@ -53,5 +53,7 @@ int main(void)
         pop_arr(&st, &value);
         printf("%d ", value);
     }
+    // Удаляем динамический массив из кучи
+    free(st.item);
     return 0;
 }
