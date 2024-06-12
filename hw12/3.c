@@ -61,7 +61,6 @@ int main(void)
         printf("Error opening file");
         return 1;
     }
-
     while ((n_scan = fscanf(open, "%d;%d;%d;%d;%d;%d", &Y, &M, &D, &H, &m, &T)) > 0)
     {
         if (n_scan < 6)
