@@ -3,7 +3,6 @@
 
 int main(void)
 {
-    printf("Line number is: %d\n",__LINE__); // указывает номер строки, в которой вызывается
     DEBUGPRINT;
     return 0;
 }
